@@ -1,3 +1,6 @@
+@import"header.scss";
+@import"footer.scss";
+
 @font-face {
   font-family: "RobotoRegular";
   src: url("../fonts/RobotoRegular.eot"),
@@ -6,3 +9,135 @@
   font-style: normal;
   font-weight: normal;
 }
+
+body {
+  width:320px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  box-sizing: border-box;
+}
+
+.headline,
+.main__headline,
+.partner__headline {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.step__block--first,
+.step__block--second,
+.step__block--third{
+  width: 300px;
+  height: 240px;
+  margin: 0 auto;
+  background-image: url(../img/step1.png),linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color: #ff8523;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.partner__img {
+  margin-left: 100px;
+}
+
+.partner__name {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.partner__descr {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 30px;
+  padding-bottom: 27px;
+}
+
+.partner__link {
+  color: #ff4e50;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 74px;
+  padding-top: 10px;
+  padding-right: 74px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.ideas__headline {
+  padding-top: 30px;
+}
+
+.ideas__text {
+  background-image: url(../img/ideas1.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #333333;
+  margin-bottom: 9px;
+}
+
+.ideas__text {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.ideas__text--extreme {
+  padding-top: 16px;
+}
+
+.search__descr {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.search__textarea  {
+  box-shadow: 0 1px 0 #eeeeee;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-left: 40px;
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 34px;
+}
+
+.search__link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  padding-left: 84px;
+  padding-top: 14px;
+  padding-right: 84px;
+  padding-bottom: 12px;
+  margin-left: 20px;
+}
+
+
+
+
+
