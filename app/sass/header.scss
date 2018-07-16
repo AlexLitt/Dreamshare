@@ -1,12 +1,29 @@
+
+$tablet: 660px;
+$desktop-width: 960px;
+
+
+
 .main-header {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-color: #1a1915;
   height: 540px;
+  
+  @media(min-width: $tablet) {
+    background-image: url(../img/background-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 768px;
+  }
 }
 
 .header__link-block {
   padding-top: 32px;
+  
+  @media(min-width: $tablet) {
+    margin-left: 500px;
+  }
 }
 
 .header__log-in {
@@ -39,6 +56,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  @media(min-width: $tablet) {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 .header__motto {
@@ -47,6 +71,16 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: $tablet) {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 0;
+  }
 }
 
 .header__descr {
@@ -58,6 +92,12 @@
   padding-left: 65px;
   padding-right: 39px;
   padding-bottom: 19px;
+  @media(min-width: $tablet) {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+  }
 }
 
 .header__action {
@@ -72,4 +112,8 @@
   padding-right: 52px;
   padding-bottom: 12px;
   margin-left: 20px;
+  @media(min-width: $tablet) {
+    margin-left: 260px;
+  }
 }
+

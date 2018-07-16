@@ -1,20 +1,23 @@
 @import"header.scss";
 @import"footer.scss";
+@import"variables.scss";
 
 @font-face {
   font-family: "RobotoRegular";
   src: url("../fonts/RobotoRegular.eot"),
   url("../fonts/RobotoRegular.woff") format("woff"),
   url("../fonts/RobotoRegular.ttf") format("truetype");
-  font-style: normal;
   font-weight: normal;
 }
 
 body {
   width:320px;
   margin: 0 auto;
-  font-family: Montserrat;
   box-sizing: border-box;
+  
+  @media(min-width: $tablet) {
+    width: 768px;
+  }
 }
 
 .headline,
@@ -26,9 +29,29 @@ body {
   text-align: center;
 }
 
-.step__block--first,
-.step__block--second,
-.step__block--third{
+.headline {
+  @media(min-width: $tablet) {
+    padding-top: 50px;
+  }
+}
+
+.main__wrapper {
+  @media(min-width: $tablet) {
+  width: 768px;
+  }
+}
+
+.step__wrapper {
+  @media(min-width: $tablet) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+}
+
+.step__block {
   width: 300px;
   height: 240px;
   margin: 0 auto;
@@ -38,10 +61,108 @@ body {
   background-color: #ff8523;
   border-radius: 4px;
   margin-top: 10px;
+  @media(min-width: $tablet) {
+    width: 239px;
+    height: 403px;
+    background-position: center;
+  }
+}
+
+.step__block--second {
+  width: 300px;
+  height: 240px;
+  margin: 0 auto;
+  background-image: url(../img/step2.png),linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color: #ff8523;
+  border-radius: 4px;
+  margin-top: 10px;
+  @media(min-width: $tablet) {
+    width: 239px;
+    height: 403px;
+    background-position: center;
+  }
+}
+
+.step__block--third {
+  width: 300px;
+  height: 240px;
+  margin: 0 auto;
+  background-image: url(../img/step3.png),linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color: #ff8523;
+  border-radius: 4px;
+  margin-top: 10px;
+  @media(min-width: $tablet) {
+    width: 239px;
+    height: 403px;
+    background-position: center;
+  }
+}
+
+.step__link {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  background-color: #ff4e50;
+  margin-left: 23px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  z-index: 2;
+  position: relative;
+}
+
+.step__headline {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 22px;
+  padding-top: 40px;
+}
+
+.step__text {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+
+.partner__wrapper {
+  @media(min-width: $tablet) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    justify-content: space-around;
+  }
+}
+
+.partner__block {
+  @media(min-width: $tablet) {
+    width: 300px;
+  }
 }
 
 .partner__img {
   margin-left: 100px;
+  @media(min-width: $tablet) {
+    margin-left: 50px;
+    
+  }
 }
 
 .partner__name {
@@ -49,6 +170,14 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-align: center;
+  @media(min-width: $tablet) {
+    padding: 0;
+    margin: 0;
+    margin-right: 100px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 .partner__descr {
@@ -59,6 +188,38 @@ body {
   padding-left: 32px;
   padding-right: 30px;
   padding-bottom: 27px;
+  @media(min-width: $tablet) {
+    padding: 0;
+    margin: 0;
+    color: #666666;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.partner__block--Hunter {
+  @media(min-width: $tablet) {
+    order: 1;
+  }
+}
+
+.partner__block--Heather {
+  @media(min-width: $tablet) {
+    order: 2;
+  }
+}
+
+.partner__block--Lucas {
+  @media(min-width: $tablet) {
+    order: 3;
+  }
+}
+
+.partner__block--Bradley {
+  @media(min-width: $tablet) {
+    order: 4;
+  }
 }
 
 .partner__link {
