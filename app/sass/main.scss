@@ -1,19 +1,14 @@
 @import"header.scss";
 @import"footer.scss";
-@import"variables.scss";
 
-@font-face {
-  font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular.eot"),
-  url("../fonts/RobotoRegular.woff") format("woff"),
-  url("../fonts/RobotoRegular.ttf") format("truetype");
-  font-weight: normal;
-}
+
+$tablet:660px;
 
 body {
   width:320px;
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: Montserrat;
   
   @media(min-width: $tablet) {
     width: 768px;
@@ -29,7 +24,7 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
+
 .headline {
   @media(min-width: $tablet) {
     padding-top: 50px;
@@ -52,11 +47,9 @@ body {
   }
 }
 
-.step__block {
-=======
+.step__block,
 .step__block--first,
 .step__block--third{
->>>>>>> e65dc6a74ec75bbe5fc26c00073de2829d349435
   width: 300px;
   height: 240px;
   margin: 0 auto;
@@ -206,7 +199,6 @@ body {
   margin-left: 100px;
   @media(min-width: $tablet) {
     margin-left: 50px;
-    
   }
 }
 
@@ -245,8 +237,7 @@ body {
 
 .partner__block--Hunter {
   @media(min-width: $tablet) {
-    order: 1;
-  }
+    order: 1;}
 }
 
 .partner__block--Heather {
@@ -326,7 +317,7 @@ body {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 50px;
-}
+  }
 
 .ideas__text--fourth {
   background-image: url(../img/ideas4.png);
@@ -424,7 +415,7 @@ body {
   padding-left: 10px;
   padding-top: 10px;
   margin-bottom: 34px;
-}
+  } 
 
 .search__link {
   color: #ffffff;
@@ -437,9 +428,4 @@ body {
   padding-right: 84px;
   padding-bottom: 12px;
   margin-left: 20px;
-}
-
-
-
-
-
+  }
